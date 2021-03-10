@@ -1,20 +1,12 @@
 header {
-    background-color: $grey-pink;
+    background-color: $color-grey-pink;
     height: 3rem;
     display: flex;
     justify-content: center;
     align-items: flex-end;
+
+    @extend %navbar;
 }
 
-nav {
-    background-color: $red;
-    display: flex;
-    justify-content: flex-end;
-    width: 90%;
-}
 
-button {
-    background-color: $neutral;
-    width: 1rem;
-    height: 1rem;
-}
+
