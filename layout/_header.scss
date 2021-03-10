@@ -1,0 +1,12 @@
+header {
+    background-color: $color-grey-pink;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    @extend %navbar;
+}
+
+
+

@@ -1,0 +1,24 @@
+.section-container {
+    display: flex;
+    justify-content: center;
+}
+
+section {
+    background-color: $color-neutral;
+    height: 100vh;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 12;
+    grid-template-rows: 6;
+
+    .landing__article {
+        background-color: $color-white;
+        margin: 1rem;
+        margin-top: 4rem;
+        padding: 2rem;
+        height: 50vh;
+        grid-column: 4 / 8;
+        grid-row: 1 / 3;
+    }
+}
+
