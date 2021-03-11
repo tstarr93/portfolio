@@ -12,13 +12,51 @@
             display: flex;
             justify-content: flex-end;
             width: 90%;
+            border-radius: 0 5px 5px 0;
     
             button {
                 background-color: $color-white;
-                width: 2em;
-                height: 2em;
+                width: 40px;
+                height: 40px;
                 border: 1px solid $color-white;
                 border-radius: 5px;
             }
         }
     }
+
+%box-shadow {
+    box-shadow: 0px 8px 10px #8888883d;
+}
+
+%header {
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+%background {
+    background-color: $color-neutral;
+    height: calc(100vh - 70px);
+    width: 90%;
+}
+
+%grid-container {
+    display: grid;
+    grid-template-columns: 12;
+    grid-template-rows: 6;
+}
+
+%img-box {
+    width: 80vw;
+    height: 25vh;
+    background-color: #E1E2DC;
+    max-width: 100%;
+}
+
+%description-box {
+    width: 50vw;
+    height: 15vh;
+    transform: rotate(-1deg);
+    background-color: $color-white; 
+}

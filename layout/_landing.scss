@@ -3,13 +3,9 @@
     justify-content: center;
 }
 
-section {
-    background-color: $color-neutral;
-    height: 100vh;
-    width: 90%;
-    display: grid;
-    grid-template-columns: 12;
-    grid-template-rows: 6;
+.landing {
+    @extend %background;
+    @extend %grid-container;
 
     .landing__article {
         background-color: $color-white;
@@ -18,9 +14,9 @@ section {
         padding: 2rem;
         height: 60vh;
         transform: rotate(1deg);
-        box-shadow: 0px 8px 10px #8888883d;
+        @extend %box-shadow;
         grid-column: 4 / 8;
-        grid-row: 1 / 3;
+        grid-row: 4 / 6;
 
         h1,
         p {
