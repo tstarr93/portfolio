@@ -27,11 +27,11 @@ header nav button {
   border-radius: 5px;
 }
 
-.projects__article__section, .projects__article__img, .landing .landing__article {
+.resume .resume-section .article-2, .resume .resume-section .img-2, .resume .resume-section .article-1, .resume .resume-section .img-1, .projects__article__section, .projects__article__img, .landing .landing__article {
   box-shadow: 0px 8px 10px #8888883d;
 }
 
-.projects, .landing {
+.resume, .projects, .landing {
   background-color: #F2F2F2;
   height: calc(100vh - 70px);
   width: 90%;
@@ -83,7 +83,7 @@ body {
   font-weight: lighter;
 }
 
-.main-header {
+.projects-header {
   background-color: #679281;
 }
 
@@ -108,4 +108,66 @@ body {
 .projects__article .section-2 {
   grid-column: 4/10;
   transform: rotate(1deg);
+}
+
+.resume-header {
+  background-color: #EAD87E;
+}
+
+.resume .skills {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.resume .skills__icon {
+  margin: 10px;
+}
+.resume .skills .icon-1 {
+  color: #C3B8BC;
+}
+.resume .skills .icon-2 {
+  color: #679281;
+}
+.resume .skills .icon-3 {
+  color: #353235;
+}
+.resume .skills .icon-4 {
+  color: #E77462;
+}
+.resume .skills .icon-5 {
+  color: #B1BBBA;
+}
+.resume .skills .icon-6 {
+  color: #EAD87E;
+}
+.resume .resume-section {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(6, auto);
+}
+.resume .resume-section__img {
+  width: 190px;
+  height: 150px;
+  background-color: #E1E2DC;
+}
+.resume .resume-section__article {
+  width: 126px;
+  height: 137px;
+  background-color: #FFFEFE;
+}
+.resume .resume-section .img-1 {
+  grid-column: 2/9;
+  grid-row: 3/7;
+}
+.resume .resume-section .article-1 {
+  grid-column: 8/12;
+  grid-row: 2/4;
+  z-index: 1;
+}
+.resume .resume-section .article-2 {
+  grid-column: 6/10;
+  grid-row: 2/4;
 }
