@@ -1,0 +1,7 @@
+.contact-header {
+    background-color: $color-black;
+}
+
+.contact {
+    @extend %background;
+}
