@@ -37,7 +37,7 @@ header nav button {
   width: 90%;
 }
 
-.landing {
+.contact, .landing {
   display: grid;
   grid-template-columns: 12;
   grid-template-rows: 6;
@@ -164,7 +164,7 @@ body {
   grid-row: 3/7;
 }
 .resume .resume-section .article-1 {
-  grid-column: 8/12;
+  grid-column: 8/11;
   grid-row: 2/4;
   z-index: 1;
   transform: rotate(1deg);
@@ -183,4 +183,34 @@ body {
 
 .contact-header {
   background-color: #353235;
+}
+
+.contact {
+  height: calc(100vh - 70px - 2.5vh);
+}
+.contact__img {
+  height: 40vh;
+  width: 60vw;
+  background-color: #E1E2DC;
+  grid-column: 4/10;
+  grid-row: 3/5;
+  z-index: 1;
+}
+.contact__buttons {
+  height: 35vh;
+  width: 70vw;
+  background-color: #FFFEFE;
+  grid-column: 4/9;
+  grid-row: 4/6;
+}
+.contact__buttons .contact-button {
+  height: 30px;
+  width: 30px;
+  border-radius: 30px;
+}
+
+footer {
+  height: 2.5vh;
+  width: 100%;
+  background-color: #B1BBBA;
 }

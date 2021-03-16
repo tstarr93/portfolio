@@ -4,4 +4,36 @@
 
 .contact {
     @extend %background;
+    @extend %grid-container;
+    height: calc(100vh - 70px - 2.5vh);
+
+    &__img {
+        height: 40vh;
+        width: 60vw;
+        background-color: #E1E2DC;
+        grid-column: 4 / 10;
+        grid-row: 3 / 5;
+        z-index: 1;
+    }
+    
+    &__buttons {
+        height: 35vh;
+        width: 70vw;
+        background-color: $color-white;
+        grid-column: 4 / 9;
+        grid-row: 4 / 6;
+
+        .contact-button {
+            height: 30px;
+            width: 30px;
+            border-radius: 30px;
+        }
+    }
+    
+}
+
+footer {
+    height: 2.5vh;
+    width: 100%;
+    background-color: $color-blue-grey;
 }
