@@ -34,6 +34,7 @@
         .section-2 {
             grid-column: 4 / 10;
             transform: rotate(1deg);
+            z-index: 1;
         }
     }
 }
